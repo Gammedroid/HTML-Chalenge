@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css" />
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Entre em contato</legend>
+                <div>
+                    <label >
+                        <strong>Com qual área você gosataria de se contatar?</strong>
+                            <select name='Areas' id='Contact'>
+                                <option value='Não selecionado'>Selecione o setor</option>
+                                <option value='Desenvolvimento'>Desenvolvimento</option>
+                                <option value='Suporte'>Suporte</option>
+                                <option value="Comercial">Comercial</option>
+                            </select>
+                    </label>
+
+                    <label>
+                        <strong>Nome completo:</strong>
+                            <input type="text"
+                            placeholder="Seu nome"
+                            required
+                            />
+                    </label>
+
+                    <label>
+                        <strong>E-mail:</strong>
+                            <input 
+                            required
+                            type="email"
+                            pattern=".+@.+\.com"
+                            placeholder="example@gmail.com"
+                            title='Somente emails com final ".com"'
+>  
+                    </label>
+
+                    <label>
+                        <strong>Sua mensagem</strong>
+                            <textarea
+                            required
+
+                            placeholder="Digite sua mensagem aqui"
+                            rows="10"
+                            cols="30"
+                            ></textarea>
+                    </label>
+
+                    <label class="check">
+                        <input type="checkbox"  name="notif" id='notif'/>
+                        <em>Aceito receber novidades por e-mail</em>
+                    </label>
+
+                    <button type="submit">Enviar</button>
+                </div>
+        </fieldset>
+    </form>    
+</body>
+</html>

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, img {
+    margin-bottom: 5px;
+}
+
+img {
+    margin: 12px 0;
+}
+
+blockquote {
+    margin: 25px;
+}
+
+hr {
+    margin: 12px 0;
+    width: 50%;
+}
